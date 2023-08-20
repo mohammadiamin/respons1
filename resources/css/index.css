@@ -1,0 +1,250 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* global */
+a {text-decoration: none;}
+html {
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+}
+/* header */
+.mobile {
+    display: none;
+}
+.desktop {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+}
+.desktop .logo-container {
+    height: 32px;
+}
+.logo-container img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu li {
+    display: inline;
+    margin-left: 16px;
+}
+@media only screen and (max-width: 530px){
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        height: 64px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .icon-container img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .menu li {
+        display: inline;
+        margin-left: 16px;
+    }
+}
+
+
+/* landing */
+.landing {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+}
+.landing .img-container {
+    padding: 32px 24px;
+    width: 60%;    
+}
+.landing img {
+    width: 100%;
+}
+.landing .text-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.text-container .button {
+    text-align: center;
+}
+.landing .button {
+    width: 100%;
+    background-color: darkgray;
+    padding: 8px;
+    color: white;
+}
+@media only screen and (max-width:530px) {
+    .landing {
+        flex-direction: column;
+    }
+    .landing .img-container {
+        padding: 0;
+        width: 100%;    
+    }
+    .landing .text-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 32px 16px;
+    }
+}
+/* mission */
+.mission .mission-mobile {
+    display: none;
+}
+.mission {
+    display: flex;
+    flex-direction: row;
+}
+.mission .left {
+    padding: 32px 24px;
+    width: 60%;    
+}
+.mission img {
+    width: 100%;
+}
+.mission .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission .box {
+    display: flex;
+    flex-direction: row;
+}
+.box .img-container {
+    height: auto;
+    width: 35%;
+}
+.box .text-container {
+    width: 65%;
+}
+
+@media only screen and (max-width:530px) {
+    .mission .left, .mission-desktop {
+        display: none;
+    }
+    .mission .mission-mobile {
+        display: block;
+    }
+    .mission .right {
+        width: 100%;
+        padding: 16px;
+        flex-direction: column;
+    }
+    .mission .box {
+        flex-direction: column;
+    }
+    .box .img-container {
+        height: auto;
+        width: 100%;
+    }
+    .mission img {
+        width: 100%;
+    }
+}
+
+
+
+
+/* learning */
+.learning-mobile {
+    display: none;
+}
+.learning {
+    background-color: rgb(162, 162, 162);
+}
+.learning .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learning .box {
+    background-color: white;
+    display: flex;
+    width: 200px;
+    margin: 32px;
+}.learning img{
+    width: 100%;
+}
+.learning .img-container {
+    width: 200px;
+}
+@media only screen and (max-width:530px) {
+    .learning-desktop {
+        display: none;
+    }
+    .learning-mobile {
+        display: block;
+    }
+     .learning-mobile .button {
+        background-color: darkgray;
+        padding: 16px 16px 24px 16px;
+        margin: 8px;
+     }
+}
+
+
+/* thesis */
+
+.thesis-container {
+    display: flex;
+}
+
+.thesis-left {
+    width: 60%;
+    padding: 32px 24px;
+}
+.thesis video {
+    width: 100%;
+}
+
+.thesis-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.thesis-right .box {
+    display: flex;
+    flex-direction: row;
+}
+.thesis-right .img-container {
+    width: 35%;
+}
+.thesis-right img {
+    width: 100%;
+}
+.thesis-right .text-container {
+    width: 65%;
+}
+
+@media only screen and (max-width:530px) {
+    .thesis-desktop {
+        display: none;
+    }
+    .thesis-left {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* footer */
+footer {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
